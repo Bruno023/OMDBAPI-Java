@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             String responseLine, strResultado = "";
             StringBuilder sbResponse;
             try {
-                strAPIUrl = new URL("http://www.omdbapi.com/?apikey=eec92515&s="+Texto);
+                strAPIUrl = new URL("http://www.omdbapi.com/?apikey=your_api_key&s="+Texto);
                 miConexion = (HttpURLConnection) strAPIUrl.openConnection();
                 miConexion.setRequestMethod("GET");
                 if (miConexion.getResponseCode() == 200) {
