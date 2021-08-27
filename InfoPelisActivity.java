@@ -87,7 +87,7 @@ public class InfoPelisActivity extends AppCompatActivity {
             String responseLine, strResultado = "";
             StringBuilder sbResponse;
             try {
-                strAPIUrl = new URL("http://www.omdbapi.com/?apikey=eec92515&i="+Id);
+                strAPIUrl = new URL("http://www.omdbapi.com/?apikey=your_api_key&i="+Id);
                 miConexion = (HttpURLConnection) strAPIUrl.openConnection();
                 miConexion.setRequestMethod("GET");
                 if (miConexion.getResponseCode() == 200) {
